@@ -8,7 +8,8 @@
 <br>
 
 ### 1. don't mutate inputs. Inputs should be read only
-### 2. don't use let or var if possible
+### 2. only use Inputs for gaining Data in functions. Never access via global  variable
+### 3. don't use let or var if possible
    1. if not, scope it in functions
 ```js 
 const listNames = list => {
@@ -26,7 +27,7 @@ function* gen(list) {
     }
 }
 ```
-### 3. copy if possible
+### 4. copy if possible
 There are more then one solution:
 
 ```js
@@ -62,7 +63,7 @@ const cp = obj => {
 const copyOfList = cp(list);
 ```
 
-### 4. use curry
+### 5. use curry
 ```js
 const dollarTo = currency => {
 	return (dollar) => {
@@ -81,11 +82,11 @@ dollarTo("YEN")(100); // 10740
 dollarToEur(100); // 83
 ```
 
-### 5. don't install packages with a big dependency list if you can avoid it
+### 6. don't install packages with a big dependency list if you can avoid it
    1. Example: microservices often don't need any express/fastify magic
    2. use native [http](https://nodejs.org/api/http.html) or packages like [bunserver](https://www.npmjs.com/package/bunserver)
    3. there is a lot of nice frameworks with a big list of dependencies, and I'm using it too. But if I can avoid them, I write some code of my own.
-### 6. be patient.
+### 7. be patient.
 
 <br>
 <br>
