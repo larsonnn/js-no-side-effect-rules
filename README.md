@@ -86,3 +86,8 @@ dollarToEur(100); // 83
    2. use native [http](https://nodejs.org/api/http.html) or packages like [bunserver](https://www.npmjs.com/package/bunserver)
    3. there is a lot of nice frameworks with a big list of dependencies, and I'm using it too. But if I can avoid them, I write some code of my own.
 ## 6. be patient.
+
+<br>
+<br>
+
+[JSFiddle - example code](https://jsfiddle.net/6pnoe9by/7/)
