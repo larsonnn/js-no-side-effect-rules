@@ -66,15 +66,15 @@ const copyOfList = cp(list);
 ```js
 const dollarTo = currency => {
 	return (dollar) => {
-        switch(currency) {
-            case 'EUR':
-            return dollar * 0.83;
-        case 'YEN':
-            return dollar * 107.40;
-        default:
-            return null;
-        }
-  }
+		switch(currency) {
+		    case 'EUR':
+			return dollar * 0.83;
+		    case 'YEN':
+			return dollar * 107.40;
+		    default:
+			return null;
+		}
+  	}
 }
 const dollarToEur = dollarTo("EUR");
 dollarTo("YEN")(100); // 10740
