@@ -49,7 +49,7 @@ fromSomeoneElse(Object.assign({}, list));
 ```
 
 
-short copy function to help
+copy function as shortcut
 ```js
 const cp = obj => {
     return typeof obj === "object" ?
