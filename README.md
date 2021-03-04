@@ -9,7 +9,7 @@
 
 ## 1. Dont mutate inputs. Inputs should be read only
 ## 2. don't use let or var if possible
-   1. if not, scope it
+   1. if not, scope it in functions
 ```js 
 const listNames = list => {
     let c = list.length;
